@@ -21,7 +21,7 @@ int main(){
     return 0;
 }
 
-
+// questão 01
 void fatorial(int valores []){
     for(int j = 0; j<3; j++){
         int soma =valores[j];
@@ -32,7 +32,9 @@ void fatorial(int valores []){
     }
 }
 
+// questão 02
 float converteGraus(int valor){
 
     return(1.8 * valor) + 32;
 }
+
