@@ -3,13 +3,20 @@
 
 using namespace std;
 void fatorial(int valores []);
-void converteGraus(int valor);
+float converteGraus(int valor);
 
 int main(){
     int valores[] = {3, 4, 5};
+    float resultado, grau;
+
     fatorial(valores);
 
-    converteGraus(32);
+    for(int i = 0; i < 3; i++) {
+        cout <<"Digite o valor do grau Celsius" << endl;
+        cin >> grau;
+        resultado = converteGraus(grau);
+        cout <<"Converte Grau "<< resultado << endl;
+    }
 
     return 0;
 }
@@ -25,10 +32,7 @@ void fatorial(int valores []){
     }
 }
 
-void converteGraus(int valor){
+float converteGraus(int valor){
 
-
-    cout <<"Converte Graus "<< (1.8 * valor) + 32 << endl;
-
-
+    return(1.8 * valor) + 32;
 }
